@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="github-repos.js"></script>
+    <script src="wordpress-posts.js"></script>
+</head>
+
+<body>
+
+
+    <div class="album">
+        <div class="container">
+            <h1 class="display-4">Blog</h1>
+            <div class="row" id="blog-posts-section">
+                <div style="display: none" class="col-md-4 " data-type="template">
+                    <div class="card mb-4 shadow-sm">
+                        <a href="#" class="img-link">
+                            <img class="bd-placeholder-img card-img-top" width="100%" height="225" focusable="false" />
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="#">Card title</a></h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                                        <a href="#">View</a>
+                                    </button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-4">Ostatnie projekty</h1>
+                <p class="lead">
+                    <dl class="row" id="repos-section">
+                        <dt class="col-sm-3" style="display: none" data-type="template">
+                            <a href="#" target="_blank">Osobista strona internetowa</a>
+                        </dt>
+                        <dd class="col-sm-9" style="display: none" data-type="template">
+                            <p>Strona na której umieszczne będą informacje związane z projektami, a także będzie prowadzony blog.</p>
+                        </dd>
+                    </dl>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #222222">
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-lg">
+                <form action="mail.php" method="POST">
+                    <div class="py-5 text-left">
+                        <div class="py-5 text-center">
+                            <h2>KONTAKT</h2>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="imie" name="name" placeholder="imie" required>
+                                <div class="invalid-feedback" style="width: 100%;">
+                                    Proszę wypełnić to pole.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="temat" name="temat" placeholder="temat" required>
+                                <div class="invalid-feedback" style="width: 100%;">
+                                    Proszę wypełnić to pole.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="input-group">
+                                <textarea id="message" rows="4" name="message" placeholder="Message..." required="" class="jsx-3729832902 form-control"></textarea>
+                                <div class="invalid-feedback" style="width: 100%;">
+                                    Proszę wypełnić to pole.
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-dark btn-lg btn-block" type="submit" value="Send">Continue</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm"></div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #111111">
+    
+            <h3 class="py-3">Stay connected</h3>
+            <div class="col-md-12">
+                <a href="https://www.facebook.com/Migot.Mateusz" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
+                <a href="https://github.com/MigotMateusz" target="_blank" class="btn-social btn-github"><i class="fa fa-github"></i></a>
+                <a href="http://linkedin.com" target="_blank" class="btn-social btn-linkedin"><i class="fa fa-linkedin"></i></a>
+                <a href="https://twitter.com/MatiMigot" target="_blank" class="btn-social btn-twitter"><i class="fa fa-twitter"></i></a>
+                <a href="kontakt" target="_blank" class="btn-social btn-email"><i class="fa fa-envelope"></i></a>
+            </div>
+            <h5>Mateusz Migot &copy; 2020</h5>
+        
+    </div>
+</body>
+
+</html>
