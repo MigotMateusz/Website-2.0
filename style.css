@@ -1,0 +1,113 @@
+@keyframes toBottomFromTop {
+    49% {
+        transform: translateY(-100%);
+    }
+    50% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    51% {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.display-4 {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 4em;
+}
+
+.btn-social {
+    text-align: center  !important;
+    padding: 1.5em !important;
+    margin-left: 2em;
+}
+
+.fa {
+    padding: 0;
+    text-align: center  !important;
+    margin: 0;
+    border-right: 0px !important;
+}
+
+.footer-title {
+
+    color: #fff;
+    margin-bottom: 1em;
+}
+
+div.textColored {
+    display: inline;
+    color: #ff1744;
+}
+.footerCopyright {
+    margin-top: 2em;
+    color: #888;
+    padding: 3em;
+}
+
+.flex.row {
+    flex-direction: row;
+    padding-bottom: 2em;
+    margin-left: 0;
+}
+
+.flex {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+.icon {
+    color: #fff;
+    cursor: pointer;
+    background: #262f38;
+    font-size: 18pt;
+    height: 55px;
+    margin: 0 15px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 55px;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.icon:hover {
+    transform: scale(0.9);
+}
+
+.icon:hover .fa {
+    animation: toBottomFromTop 0.3s forwards;
+}
+
+#icon-fb:hover {
+    background: #3b5998;
+    box-shadow: 0 0 0 3px rgba(59, 89, 152, 0.1);
+}
+
+#icon-tt:hover {
+    background: #00ACEE;
+    box-shadow: 0 0 0 3px rgba(0, 172, 238, 0.1);
+}
+
+#icon-linkedin:hover {
+    background: #04669A;
+    box-shadow: 0 0 0 3px rgba(4, 102, 154, 0.1);
+}
+
+#icon-github:hover {
+    background: #040204;
+    box-shadow: 0 0 0 3px rgba(4, 2, 4, 0.1);
+}
+
+.footer > .row > a:hover {
+    text-decoration: none;
+}
