@@ -76,6 +76,7 @@ function show_blog_posts(array) {
         var tempNode = document.querySelector("div[data-type='template']").cloneNode(true);
         tempNode.querySelector("h5.card-title > a").textContent = array[i].postTitle;
         tempNode.querySelector("h5.card-title > a").href = array[i].url;
+        tempNode.querySelector("h5.card-title > a").title = array[i].postTitle;
         tempNode.querySelector("p.card-text").textContent = array[i].description;
         tempNode.querySelector("small.text-muted").textContent = array[i].postDate;
         tempNode.querySelector("img").src = array[i].image;
