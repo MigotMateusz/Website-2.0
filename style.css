@@ -13,9 +13,25 @@
 
 html, body {
     font-family: 'Open Sans', sans-serif !important;
-    background: #111 !important;
     margin: 0;
     padding: 0;
+}
+.container-fluid.repo-section {
+    background: #191919;
+    padding-bottom: 3em;
+}
+
+.table.table-dark.repo-table {
+    background: #191919;
+}
+
+.repo-link, .title-col > a {
+    color: #fff;
+}
+
+.repo-link:hover, .title-col > a:hover {
+    color: #ff1744;
+    text-decoration: none;
 }
 
 .album {
@@ -80,6 +96,13 @@ h1.h1.blog-title {
 }
 
 h1.h1.contact-title {
+    text-align: center;
+    color: #fff;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+}
+.h1.repos-title {
     text-align: center;
     color: #fff;
     padding-top: 1.5em;
