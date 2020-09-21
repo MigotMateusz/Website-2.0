@@ -8,33 +8,35 @@
     <script src="github-table-repos.js"></script>
 </head>
 
-<body>
+<body class="repo-body">
     <div class="container">
-        <h1 class="display-4">My projects' repositories</h1>
-        <table class="table table-striped table-bordered">
-            <thead class="thead-light">
+        <h1 class="display-4 table-title">Software repositories</h1>
+        <table class="table table-striped table-dark repo-table"  style="width: 100%;">
+            <thead class="thead">
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Title</th>
                     <th scope="col">Description</th>
                     <th scope="col">Language</th>
-                    <th scope="col">Updated at</th>
-                    <th scope="col">Created at</th>
+                    <th class="dont-wrap" scope="col">Updated at</th>
+                    <th class="dont-wrap" scope="col">Created at</th>
                     
                 </tr>
             </thead>
             <tbody id="table-body">
                 <tr  style="display: none" data-type="template">
                     <th scope="row">1</th>
-                    <td class="title">Mark</td>
+                    <td class="title"><a href="#" target="_blank">Mark</a></td>
                     <td class="description">Otto</td>
                     <td class="language">@mdo</td>
                     <td class="update">@mdo</td>
-                    <td class="create">@mdo</td>
+                    <td class="dont-wrap create">@mdo</td>
                     
                 </tr>
             </tbody>
         </table>
+        
+        <h3 class="h3 goback"><a href="index.html">&#8592; Go back to main page</a></h3>
     </div>
     
 </body>

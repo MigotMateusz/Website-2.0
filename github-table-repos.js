@@ -65,7 +65,8 @@ function show_repos(repositories) {
     for (var i = 0; i < keys.length; i++) {
         var tempNode = document.querySelector("tbody#table-body > tr[data-type='template']").cloneNode(true);
         tempNode.querySelector("th").textContent = i + 1;
-        tempNode.querySelector("td.title").textContent = repositories[i].name;
+        tempNode.querySelector("td.title > a").textContent = repositories[i].name;
+        tempNode.querySelector("td.title > a").href = repositories[i].html_url;
         tempNode.querySelector("td.description").textContent = repositories[i].desc;
         tempNode.querySelector("td.language").textContent = repositories[i].language;
         tempNode.querySelector("td.create").textContent = repositories[i].create_date;

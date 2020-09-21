@@ -27,6 +27,7 @@ html, body {
 
 .repo-link, .title-col > a {
     color: #fff;
+    transition: all 0.3s;
 }
 
 .repo-link:hover, .title-col > a:hover {
@@ -41,6 +42,7 @@ html, body {
 
 .card-title > a {
     color: #000;
+    transition: all 0.3s;
 }
 
 .card-title > a:hover {
@@ -252,5 +254,47 @@ div.textColored {
 }
 
 .footer > .row > a:hover {
+    text-decoration: none;
+}
+
+.repo-body {
+    background: #191919;
+}
+.display-4.table-title {
+    color: #fff;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1.5em;
+}
+.table.table-striped.table-dark.repo-table {
+    font-size: 12pt !important;
+}
+@media (min-width: 1200px) {
+    .dont-wrap {
+        width: 1%;
+        white-space:nowrap;
+    }
+}
+td.title > a {
+    color: #fff;
+    transition: all 0.3s;
+}
+
+td.title > a:hover {
+    color: #ff1744;
+    text-decoration: none;
+}
+.goback {
+    float: right;
+    
+}
+
+.goback > a {
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.goback > a:hover {
+    color: #ff1744;
     text-decoration: none;
 }

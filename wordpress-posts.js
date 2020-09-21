@@ -70,10 +70,12 @@ function latest_blog_posts() {
 latest_blog_posts();
 
 function show_blog_posts(array) {
+    var classes = ["animate__fadeInLeft", "animate__fadeInUp", "animate__fadeInRight"];
     var keys = Object.keys(array);
     var docFrag = document.createDocumentFragment();
     for (var i = 0; i < keys.length; i++) {
         var tempNode = document.querySelector("div[data-type='template']").cloneNode(true);
+        tempNode.querySelector(".card").className += classes[i];
         tempNode.querySelector("h5.card-title > a").textContent = array[i].postTitle;
         tempNode.querySelector("h5.card-title > a").href = array[i].url;
         tempNode.querySelector("h5.card-title > a").title = array[i].postTitle;
