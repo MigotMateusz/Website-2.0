@@ -12,6 +12,7 @@
 }
 
 html, body {
+    scroll-behavior: smooth;
     font-family: 'Open Sans', sans-serif !important;
     margin: 0;
     padding: 0;
@@ -297,4 +298,64 @@ td.title > a:hover {
 .goback > a:hover {
     color: #ff1744;
     text-decoration: none;
+}
+
+.button-frame {
+    display: none;
+    background-color: #ff1744;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: all .4s;
+    border-radius: 100%;
+}
+.button-frame:hover {
+    background-color: #bb1522;
+}
+.button-frame:hover .label {
+    transform: scale(.90);
+    -webkit-transform: scale(.90);
+}
+
+.label {
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+}
+
+.btnEntrance {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+    from {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.btnExit {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-name: btnExit;
+}
+
+@keyframes btnExit {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
 }
