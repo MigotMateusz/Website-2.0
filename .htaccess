@@ -1,0 +1,10 @@
+### PROTECT FILES ###
+<FilesMatch "\.(htaccess|htpasswd|ini|fla|psd|log|sh)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteRule repositories repositories.html
+RewriteRule linkedin https://www.linkedin.com/in/mateusz-migot-76457b1a4/
+RewriteRule github https://github.com/MigotMateusz
