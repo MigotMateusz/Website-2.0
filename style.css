@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,latin-ext);
 @keyframes toBottomFromTop {
     49% {
         transform: translateY(-100%);
@@ -13,7 +14,7 @@
 
 html, body {
     scroll-behavior: smooth;
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: "Open Sans", sans-serif !important;
     margin: 0;
     padding: 0;
 }
@@ -29,6 +30,15 @@ html, body {
 .repo-link, .title-col > a {
     color: #fff;
     transition: all 0.3s;
+}
+.blog-link {
+    color: #222;
+    transition: all 0.3s;
+}
+
+.blog-link:hover {
+    color: #ff1744;
+    text-decoration: none;
 }
 
 .repo-link:hover, .title-col > a:hover {
@@ -358,4 +368,21 @@ td.title > a:hover {
         opacity: 0;
         transform: scale3d(0.3, 0.3, 0.3);
     }
+}
+canvas {
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    display: block;   
+}
+.canvas-wrap {
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
 }
