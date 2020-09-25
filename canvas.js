@@ -81,12 +81,20 @@ var canvas = document.querySelector('canvas'),
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
+addEventListener('resize', () => {
+  canvas.width = innerWidth;
+  canvas.height = innerHeight;
+
+  init();
+});
+
 // Setting up the letters
 var letters = 'ABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZABCDEFGHIJKLMNOPQRSTUVXYZ';
 letters = letters.split('');
 
 // Setting up the columns
-var fontSize = 10,
+function init() {
+    var fontSize = 10,
     columns = canvas.width / fontSize;
 
 var counter = columns;
@@ -113,4 +121,7 @@ function draw() {
 }
 
 initInterval = setInterval(draw, 33);
+}
+
+init();
 
